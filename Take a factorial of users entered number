@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+	int num, i;
+	long int factorial = 1;
+
+	printf("Enter an integer: ");
+	scanf_s("%d", &num);
+
+	// show error if the user enters a negative integer
+ 
+	if (num < 0)
+		printf("Error! Factorial of a negative number doesn't exist.");
+
+	else
+	{
+		for (i = 1; i <= num; ++i)
+		{
+			factorial *= i;              // factorial = factorial*i;
+		}
+		printf("Factorial of %d = %d", num, factorial);
+	}
+
+	return 0;
+}
