@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<string.h>
+
+void ispalindrome(char* s){
+
+     int i=0, son;
+     
+     for (i=0;i<strlen(s);i++){
+     
+         if (s[i]==s[strlen(s)-i-1]){
+              son=1;}
+              
+         else {
+              son=0;}
+              
+              }
+         if (son==1){
+                     printf("true, its is palindrome\n");}
+         else {
+              printf("false, its not polindrome \n");}
+
+              }
+
+int main(void){
+    ispalindrome("Amore Roma\n");
+    ispalindrome("A Santa at Nasa\n");
+    ispalindrome("A dog! A panic in a pagoda!\n");
+    
+}
+
+
+
+/* OUTPUT:
+ false, its not polindrome
+ false, its not polindrome
+ false, its not polindrome
+ */ 
